@@ -1,4 +1,10 @@
 # 27 Remove Element
+
+"""
+Key Insights
+1. Simply overwrite the values in the nums array with the desired values
+
+"""
 class Solution(object):
     def removeElement(self, nums, val):
         """
