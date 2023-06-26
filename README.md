@@ -1,3 +1,3 @@
 # Leet-Code-Solutions
 
-Solutions and explanations to Leet Code Problems I have solved
+Solutions and explanations to Leet Code Problems I have solved thus far
