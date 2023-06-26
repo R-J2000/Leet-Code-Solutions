@@ -5,7 +5,7 @@ Runtime: 807 ms (beats 98.61%)
 Memory: 22.5 MB (beats 87.47%)
 
 Time Complextiy: O(n)
-Space Complexity: O(n)
+Space Complexity: O(1)
 
 Intuition and Approach
 - Initialize two counters lowest_price and max_profit. 
