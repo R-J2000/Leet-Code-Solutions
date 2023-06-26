@@ -31,19 +31,20 @@ Runtime: 50 ms (beats 99.90%)
 Memory: 15 MB (beats 8.12%)
 
 Intuition and Approach
-- Set two pointers i and j. j will keep track the number of unique elements encountered thus far and i will trace the list/array in range(1, len(nums))
-- j will point to the first instance of a unique element. i will continuing looping until it finds the very next unique element
+- Set two pointers left (for left pointer) and right (for right pointer). left will keep track the number of unique elements encountered 
+thus far and right will trace the list/array in range(1, len(nums))
+- left will point to the first instance of a unique element. right will continuing looping until it finds the very next unique element
 - The next unique element, once found, will be placed following the last unique element.
-- j will point to the newly situated/displaced unique element.
-- This process of updating and incrementing will continue until i has reached the last element and j is pointing to the final unique element (alternatively, 
-when j is pointing to the largest unique element in the list).
+- left will point to the newly situated/displaced unique element.
+- This process of updating and incrementing will continue until right has reached the last element and left is pointing to the final unique element (alternatively, 
+when left is pointing to the largest unique element in the list).
 """
 
 class Solution(object):
 	def removeDuplicates(self, nums):
-		j = 0
-		for i in range(1, len(nums)):
-			if nums[j] != nums[i]:
-				j += 1
-				nums[j] = nums[i]
-		return j + 1
+		left = 0
+		for right in range(1, len(nums)):
+			if nums[left] != nums[right]:
+				left += 1
+				nums[left] = nums[right]
+		return left + 1
