@@ -1,9 +1,6 @@
 """
 Solution 1
 
-Runtime: 31 ms (beats 88.55%)
-Memory: 13.4 MB (beats 67.61)
-
 Time Complexity: O(n)
 Space Complexity: O(1)
 
