@@ -1,8 +1,6 @@
 # 169 Majority Element
 """
 Solution 1 
-Runtime: 141 ms (beats 54.48%)
-Memory: 14.9 MB (beats 86.61%)
 
 Time Complextiy: O(n)
 Space Complexity: O(n)
