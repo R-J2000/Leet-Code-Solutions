@@ -5,8 +5,8 @@
 """
 Solution 1
 1. We want to merge two sorted array into a combined sorted array
-3. Exploit the additional space at the tail end of the array nums1
-4. Start by comparing the largest values and storing them at the end of nums1 and making our way to the smaller values
+2. Exploit the additional space at the tail end of the array nums1
+3. Start by comparing the largest values and storing them at the end of nums1 and making our way to the smaller values
 
 """
 class Solution(object):
