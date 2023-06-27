@@ -77,3 +77,44 @@ class Solution(object):
                 return False
         
         return True
+        
+"""
+Solution 3 (Optimized 1-Hashmap Solution)
+
+Time Complexity: O(n + m)
+Space Complexity: O(n)
+
+Intuition and Approach
+- Check to see whether the len of magazine is sufficent to supply the characters needed to construct ransomNote
+- Generate a dictionary for magazine. Store each unique character and its number of occurences as a key-value pair, respectively
+- Iterate over the characters of ransomNote using counter char. 
+- If char is NOT in the magazine dictionary or the value of char in magazine dictionary is zero, return False. Otherwise, decrement value corresponding to char. This is akin to ".remove" step in solution 1
+
+"""
+
+class Solution(object):
+    def canConstruct(self, ransomNote, magazine):
+        """
+        :type ransomNote: str
+        :type magazine: str
+        :rtype: bool
+        """
+
+        if len(ransomNote) > len(magazine):
+            return False
+        
+        mag_dict = {}
+        
+        for mag_char in magazine:
+            if mag_char not in mag_dict:
+                mag_dict[mag_char] = 1
+            else:
+                mag_dict[mag_char] += 1
+
+        for char in ransomNote:
+            if char not in mag_dict or mag_dict[char] == 0:
+                return False
+            else:
+                mag_dict[char] -= 1
+        
+        return True
