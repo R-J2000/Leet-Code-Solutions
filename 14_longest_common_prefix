@@ -1,0 +1,31 @@
+# 14 Longest Common Prefix
+
+"""
+Solution 1
+
+Time Complexity: O(nlog(n))
+Space Complexity: O(1)
+
+Intuition and Approach
+- Sort strs in alphabetical order
+- Select the first and the last string
+- Determine the longest common prefix for the first and the last string in the sorted strs and return it
+"""
+
+class Solution(object):
+    def longestCommonPrefix(self, strs):
+        """
+        :type strs: List[str]
+        :rtype: str
+        """
+        long_pre = []
+ 
+        if strs and len(strs) > 0:
+            strs = sorted(strs) 
+            first, last = strs[0], strs[-1] 
+            for i in range(len(first)):
+                if len(last) > i and last[i] == first[i]:
+                    long_pre.append(last[i])
+                else:
+                    return "".join(long_pre)
+        return "".join(long_pre)
