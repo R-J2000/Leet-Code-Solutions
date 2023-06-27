@@ -2,8 +2,6 @@
 
 """
 Solution 1 (implementation using while loop)
-Runtime: 129 ms (beats 16.45%)
-Memory: 14.6 MB (beats 64.18%)
 
 Intuition and Approach
 - Set a pointer (i). Iterate through the nums array/list. 
@@ -27,8 +25,6 @@ class Solution(object):
 
 """
 Solution 2 (for loop + two pointers in use)
-Runtime: 50 ms (beats 99.90%)
-Memory: 15 MB (beats 8.12%)
 
 Intuition and Approach
 - Set two pointers left (for left pointer) and right (for right pointer). left will keep track the number of unique elements encountered 
