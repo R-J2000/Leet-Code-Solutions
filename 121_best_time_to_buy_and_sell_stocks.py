@@ -1,8 +1,6 @@
 # 121 Best Time to Buy and Sell Stocks
 """
 Solution 1 
-Runtime: 807 ms (beats 98.61%)
-Memory: 22.5 MB (beats 87.47%)
 
 Time Complextiy: O(n)
 Space Complexity: O(1)
