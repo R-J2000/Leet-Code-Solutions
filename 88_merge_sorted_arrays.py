@@ -3,10 +3,10 @@
 # 88 Merge Sorted Array
 
 """
+Solution 1
 1. We want to merge two sorted array into a combined sorted array
-2. We are tempted to make another array num_temp that stores the sorted elements but this will take more memory
-3. A better approach would be to exploit the additional space at the tail end of the array nums1
-4. We should thus start by comparing the largest values and storing them at the end of nums1 and making our way to the smaller values
+3. Exploit the additional space at the tail end of the array nums1
+4. Start by comparing the largest values and storing them at the end of nums1 and making our way to the smaller values
 
 """
 class Solution(object):
