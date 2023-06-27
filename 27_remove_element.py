@@ -1,9 +1,11 @@
 # 27 Remove Element
 
 """
-Key Insights
-1. Simply overwrite the values in the nums array with the desired values
+Solution 1
 
+Intuition and Approach
+- Iterate over nums.
+- Overwrite the elements need to be removed. Implicity we are usign two pointer: i and x
 """
 class Solution(object):
     def removeElement(self, nums, val):
