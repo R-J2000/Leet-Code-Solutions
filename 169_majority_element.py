@@ -31,9 +31,6 @@ class Solution(object):
 """
 Solution 2 (One-Line Solution)
 
-Runtime: 135 ms (beats 80.47%)
-Memory: 14.5 MB (beats 97.8%)
-
 Time Complexity: O(nlog(n)) (as we must sort the array first)
 Space Complexity: Depends on the sorting algorithim used
 
@@ -52,9 +49,6 @@ class Solution(object):
 
 """
 [Best] Solution 3 (Boyer Moore Algorithim)
-
-Runtime:
-Memory:
 
 Time Complexity: O(n)
 Space Complexity: O(1)
