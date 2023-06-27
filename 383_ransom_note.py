@@ -35,7 +35,7 @@ class Solution(object):
 Solution 2 (Two Dictionaries)
 
 Time Complexity: O(n*m)
-Space Complexity: O(n)
+Space Complexity: O(n+m)
 
 Intuition and Approach
 - Check to see whether the len of magazine is sufficent to supply the characters needed to construct ransomNote
