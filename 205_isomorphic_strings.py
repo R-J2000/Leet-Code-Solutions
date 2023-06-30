@@ -6,7 +6,7 @@ Solution 1
 Time Complexity: O(n)
 Space Complexity:O(n)
 
-Inution and Approach
+Intuion and Approach
 - Create a dictionary with the key-value pairs corresponding to the characters in s and t
 - Iterate over the strings s and t, character by character. 
 - Add new entries to the dictionary if certain characters are not in dictionary
@@ -39,7 +39,7 @@ Solution 2 (Bidirectional Mapping Check)
 Time Complexity: O(n)
 Space Complexity:O(n)
 
-Inution and Approach
+Intuion and Approach
 - Create two dictionary with the key-value pairs corresponding to the characters in s and t, In one dictionary the charcters in s and t are the keys and values, respectively. For the second dictionary, characters in t are the key and characters in s will be values
 - Iterate over the strings s and t, character by character. 
 - If the key-values pairs in BOTH dictionaries are not one-to-one, return False.
