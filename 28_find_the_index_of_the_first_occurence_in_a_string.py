@@ -1,14 +1,15 @@
 # 28. Find the Index of the First Occurrence in a String
 
 """
-Solution 1
+Solution 1 (Sliding Window Approach)
 
 Time Complexity: O(n*m)
 Space Complexity: O(1)
 
 Intuition and Approach
-
-REDO 
+1. Use a nested for loop. The outer loop (h-pointer) will sift through the potential starting index
+2. Use the inner loop to compare the charcters of the haystack against those in needle, iteratively. 
+3. If all characters match (n-pointer == len(needle) - 1), return the h-pointer. Otherwise, return -1.
 
 """
 
