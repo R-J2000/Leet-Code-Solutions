@@ -4,7 +4,7 @@
 Solution 1 (LEFT JOIN)
 
 Intuition and Approach
-- SELECT fields that to be fields/column to be rendered
+- SELECT fields to be rendered
 - LEFT JOIN EmployeeUNI onto Employees where EmployeeUNI.id = Employees.id
 
 Special Notes:
@@ -22,7 +22,7 @@ LEFT JOIN EmployeeUNI ON EmployeeUNI.id = Employees.id
 Solution 2 (RIGHT JOIN)
   
 Intuition and Approach
-- SELECT fields that to be fields/column to be rendered
+- SELECT fields to be rendered
 - RIGHT JOIN Employees onto EmployeeUNI where EmployeeUNI.id = Employees.id
 */
 SELECT EmployeeUNI.unique_id, Employees.name
